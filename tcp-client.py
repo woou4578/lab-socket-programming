@@ -6,7 +6,7 @@ BUFFER_SIZE = 1024
 MESSAGE = ''
 
 while True:
-    s =  socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((IP, TCP_PORT))
     MESSAGE = input('Write to server : ')
     if(MESSAGE=='q'):
