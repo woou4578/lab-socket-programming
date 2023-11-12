@@ -12,7 +12,7 @@ while True:
     if(MESSAGE=='q'):
         break
     s.send(MESSAGE.encode('utf-8'))
-    pinrt('Sending data:', MESSAGE)
+    print('Sending data:', MESSAGE)
     data = s.recv(BUFFER_SIZE)
     print('Data from server:', data.decode('utf-8'))
 
